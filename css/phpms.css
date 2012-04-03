@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'LeagueGothic';
     src: url('../fonts/League_Gothic-webfont.eot');
@@ -13,15 +14,16 @@
 body {
   background: url(../images/bg.png) #f5f5f5;
   font: Arial 11px;
+  color: #fff;
+}
+.post * {
+  color: #333;
 }
 .menu {
   background: url(../images/menu.png) top center no-repeat;
   height: 100px;
-  z-index: 999;
   position: relative;
-  top: 0;
-  left: 50%;
-  margin-left: -480px;
+  z-index: 999;
 }
 .menu ul {
   list-style: none;
@@ -46,7 +48,7 @@ body {
 }
 .logo {
   background: url(../images/logo.png) bottom center no-repeat;
-  height: 220px;
+  height: 220px; 
   width: 100%;
   text-decoration: none;
   display: block;
@@ -65,7 +67,7 @@ body {
 .nalista h2 span {
   color: #fff;
   font-size: 39px;
-  font-family: 'LeagueGothic';
+  font-family: 'LeagueGothic';    
   text-align: justify;
   font-weight: normal;
   line-height: 35px;
@@ -100,7 +102,7 @@ body {
   font-size: 55px;
   font-family: 'LeagueGothic';
   font-weight: normal;
-  line-height: 35px;
+  line-height: 35px; 
   letter-spacing: 0;
 }
 .post h2 a {
@@ -160,7 +162,7 @@ body {
 }
 .widget_polls-widget{
   margin-top: 20px;
-}
+} 
 .widget_polls-widget p {
   margin: 0;
 }
@@ -168,7 +170,7 @@ body {
   color: #fff;
   margin-top: -20px;
   display: block;
-}
+} 
 .widget_polls-widget strong , .widget-container h3 {
   color: #fff;
   font-family: 'LeagueGothic';
@@ -220,4 +222,15 @@ body {
   }
   .wp-credits a:hover {
   color: #fff;
+}
+.rodape input[text]{
+  border: solid 1px #ccc;
+  color: #666;
+  border-radius: 3px;
+}
+.rodape input[button], .rodape input[submit] {
+  border-radius:5px;
+  border: none;
+  padding: 3px;
+  color: #216778;
 }
