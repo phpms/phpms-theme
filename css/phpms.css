@@ -54,7 +54,7 @@ body {
   display: block;
 }
 .content {
-  margin-top: 64px;
+  margin-top: -36px;
 }
 .nalista {
   background: url(../images/ballons.png) right center no-repeat #00222b;
