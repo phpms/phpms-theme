@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('../fonts/League_Gothic-webfont.eot');
+    src: url('../fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/League_Gothic-webfont.woff') format('woff'),
+         url('../fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('../fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+  background: url(../images/bg.png) #f5f5f5;
+  font: Arial 11px;
+}
+.menu {
+  background: url(../images/menu.png) top center no-repeat;
+  height: 100px;
+  position: relative;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -480px;
+}
+.menu ul {
+  list-style: none;
+  margin: 0 0 0 20px;
+  padding: 0;
+  padding-top: 6px;
+  text-align: center;
+}
+.menu ul li {
+  font-family: 'LeagueGothic';
+  display: inline;
+}
+.menu ul li a {
+  color: #00222b;
+  font-size: 26px;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 60px;
+}
+.menu ul li a:hover {
+  color: #0033ff;
+}
+.logo {
+  background: url(../images/logo.png) bottom center no-repeat;
+  height: 220px; 
+  width: 100%;
+  text-decoration: none;
+  display: block;
+}
+.content {
+  margin-top: 64px;
+}
+.nalista {
+  background: url(../images/ballons.png) right center no-repeat #00222b;
+  box-shadow: 0px 2px 6px #333;
+}
+.nalista h2 {
+  padding: 25px;
+  margin: 0;
+}
+.nalista h2 span {
+  color: #fff;
+  font-size: 39px;
+  font-family: 'LeagueGothic';    
+  text-align: justify;
+  font-weight: normal;
+  line-height: 35px;
+}
+.nalista span.s2 {
+  font-size: 54px;
+}
+.nalista span.s3 {
+  font-size: 48px;
+}
+.nalista ul {
+  list-style-image: url(../images/arrow.png);
+  padding-top: 30px;
+}
+.nalista ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  padding:  3px;
+  display: block;
+}
+.nalista ul li a:hover {
+  text-decoration: underline;
+  background: rgba(33, 103, 120, .4);
+}
+.divider {
+  background: url(../images/divider.png) center center no-repeat ;
+  height: 100px;
+}
+.titulo-grande{
+ color: #333;
+  font-size: 55px;
+  font-family: 'LeagueGothic';
+  font-weight: normal;
+  line-height: 35px; 
+  letter-spacing: 0;
+}
+.post h2 a {
+  color: #216778;
+  font-family: 'LeagueGothic';
+  font-size: 32px;
+  text-decoration: none;
+  border-bottom: dotted 1px #216778;
+  font-weight: normal;
+  margin-left: 15px;
+}
+.post h2 a:hover{
+  color: #fff;
+  border-color: #fff;
+}
+.post .data{
+  text-align: center;
+  line-height: 12px;
+}
+.post span.dia{
+  font-size: 36px;
+  line-height: 30px;
+}
+.post span.mes{
+  font-size: 20px;
+  line-height: 17px;
+}
+.post span.hora{
+  font-size: 11px;
+  line-height: 9px;
+}
+.link-mais, .link-mais a{
+  color: #333;
+  font-family: 'LeagueGothic';
+  font-size: 28px;
+  text-decoration: none;
+  line-height: 32px;
+  text-align: center;
+  background: rgba(255,255,255,.3);
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.link-mais:hover, .link-mais a:hover {
+  color: #216778;
+}
+.link-mais a{
+  background: none;
+  font-size: 18px;
+  }
+.rodape {
+  background: url(../images/bgf.jpg) #333;
+  padding-bottom: 30px;
+}
+.widget_polls-widget h3 {
+  display: none;
+}
+.widget_polls-widget{
+  margin-top: 20px;
+} 
+.widget_polls-widget p {
+  margin: 0;
+}
+.widget_polls-widget a {
+  color: #fff;
+  margin-top: -20px;
+  display: block;
+} 
+.widget_polls-widget strong , .widget-container h3 {
+  color: #fff;
+  font-family: 'LeagueGothic';
+  font-size: 28px;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: left;
+  font-weight: normal;
+  padding-bottom: 0;
+}
+.widget_polls-widget ul , .widget_polls-widget ul li{
+  list-style: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.widget_polls-widget .wp-polls-ul {
+  margin-bottom:20px;
+}
+.widget_polls-widget .Buttons {
+  border-radius:5px;
+  border: none;
+  padding: 3px;
+  color: #216778;
+}
+.interna .nalista {
+  margin-bottom: 30px;
+}
+.rodape .grid_5 {
+  padding-top: 20px;
+}
+.rodape li {
+  list-style: none;
+}
+.rodape a {
+  color: #ccc;
+  display: block;
+  font-size: 14px;
+}
+.wp-credits,.wp-credits a {
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;
+  font-size:11px;
+}
+.wp-credits a {
+    display: inline;
+    color: #216778;
+  }
+  .wp-credits a:hover {
+  color: #fff;
+}

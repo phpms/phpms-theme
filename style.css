@@ -1,0 +1,17 @@
+/*
+Theme Name: PHPMS 2012
+Theme URI: http://twitter.com/#!/jgolfetto
+Description: Tema para o Grupo de Usuários PHP de MS
+Author: Jeferson Golfetto
+Version: 0.1
+License: GNU General Public License
+Tags: phpms, capivara
+*/
+
+@import url("css/reset.css");
+@import url("css/text.css");
+@import url("css/960.css");
+@import url("css/phpms.css");
+.skip-link {
+	display: none;
+}
