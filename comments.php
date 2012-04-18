@@ -13,7 +13,7 @@
  */
 ?>
 
-			<div id="comments">
+			<div id="comments" class="grid_12">
 <?php if ( post_password_required() ) : ?>
 				<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'twentyten' ); ?></p>
 			</div><!-- #comments -->
@@ -25,7 +25,6 @@
 		return;
 	endif;
 ?>
-
 <?php
 	// You can start editing here -- including this comment!
 ?>
@@ -74,6 +73,16 @@
 
 <?php endif; // end have_comments() ?>
 
-<?php comment_form(); ?>
+<?php 
+$comments_args = array(
+        // change the title of send button 
+        'title_reply'=>'<h4>Deixe seu comentário</h4>',
+        // remove "Text or HTML to be displayed after the set of comment fields"
+        'comment_notes_after' => '',
+        'id_form' => 'comentarios'
+);
+
+comment_form($comments_args);
+?>
 
 </div><!-- #comments -->

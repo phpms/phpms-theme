@@ -19,6 +19,8 @@ get_header(); ?>
   <div href="#" class="grid_4 link-mais"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', '' ) . '</span> %title' ); ?></div>
   <div href="#" class="grid_4 push_4 link-mais"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', '' ) . '</span>' ); ?></div>
   <div class="clear"></div>  
+  <?php comments_template( '', true ); ?>
+  <div class="clear"></div>  
   <div class="grid_12 divider">&nbsp;</div>
 <?php
 				get_template_part( 'groups');
