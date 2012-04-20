@@ -10,7 +10,7 @@
 get_header(); ?>
 
 		<h1 class="grid_12 titulo-grande"><?php
-					printf( __( ' %s', 'twentyten' ), '<span>' . single_cat_title( '', false ) . '</span>' );
+					printf( __( ' %s', 'phpms' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 		?></h1>
 				<?php
 				get_template_part( 'loop', 'category' );

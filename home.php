@@ -15,8 +15,8 @@ get_header(); ?>
   <div class="grid_12 divider">&nbsp;</div>
   <div class="clear"></div>
   <h1 class="grid_12 titulo-grande">Notícias</h1>
-<?php 
-	query_posts('posts_per_page=2'); 
+<?php
+	query_posts('posts_per_page=2');
  	if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 			<div class="grid_6 post">
 			    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>

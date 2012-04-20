@@ -9,9 +9,9 @@
 
 get_header(); ?>
 
-		
+
 <?php if ( have_posts() ) : ?>
-				<h1 class="grid_12 titulo-grande"><?php printf( __( 'Search Results for: %s', 'twentyten' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h1 class="grid_12 titulo-grande"><?php printf( __( 'Search Results for: %s', 'phpms' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 				<?php
 				/* Run the loop for the search to output the results.
 				 * If you want to overload this in a child theme then include a file
@@ -21,9 +21,9 @@ get_header(); ?>
 				?>
 <?php else : ?>
 		<div class="grid_12 post">
-		<h1 class="grid_12 titulo-grande"><a name="not"><?php _e( 'Not Found', 'twentyten' ); ?></h1>
+		<h1 class="grid_12 titulo-grande"><a name="not"><?php _e( 'Not Found', 'phpms' ); ?></h1>
 		<div class="grid_12 entry-content">
-			<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'twentyten' ); ?></p>
+			<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'phpms' ); ?></p>
 			<?php get_search_form(); ?>
 		</div>
 	</div>

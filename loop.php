@@ -18,9 +18,9 @@
 ?>
 <?php if ( ! have_posts() ) : ?>
 	<div class="grid_12 post">
-		<h2 class="entry-title"><?php _e( 'Not Found', 'twentyten' ); ?></h2>
+		<h2 class="entry-title"><?php _e( 'Not Found', 'phpms' ); ?></h2>
 		<div class="entry-content">
-			<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'twentyten' ); ?></p>
+			<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'phpms' ); ?></p>
 			<?php get_search_form(); ?>
 		</div>
 	</div>
@@ -46,17 +46,17 @@
 	 */ ?>
 <?php while ( have_posts() ) : the_post(); ?>
 	<div id="post-<?php the_ID(); ?>" class="grid_12 post">
-		<h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+		<h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'phpms' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 	    <div class="grid_1 alpha data"><span class="dia"><?php the_time('d') ?></span><br><span class="mes"><?php the_time('M') ?></span><br><span class="hora"><?php the_time('H\h i') ?></span></div>
 	    <div class="grid_10 alpha"><?php the_excerpt(); ?></div>
 	 </div>
   	<div class="clear"></div>
 <?php endwhile; // End the loop. Whew. ?>
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
-  <div href="#" class="grid_4 link-mais"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?></div>
-  <div href="#" class="grid_4 push_4 link-mais"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentyten' ) ); ?></div>
+  <div href="#" class="grid_4 link-mais"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'phpms' ) ); ?></div>
+  <div href="#" class="grid_4 push_4 link-mais"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'phpms' ) ); ?></div>
 <?php endif; ?>
-  <div class="clear"></div>  
+  <div class="clear"></div>
   <div class="grid_12 divider">&nbsp;</div>
 <?php echo get_template_part('groups')?>
 <div class="grid_12 divider">&nbsp;</div>
