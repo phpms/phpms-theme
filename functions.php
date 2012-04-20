@@ -77,7 +77,7 @@ function phpms_setup() {
 	// Add default posts and comments RSS feed links to head
 	add_theme_support( 'automatic-feed-links' );
 
-	load_theme_textdomain('phpms');
+	load_theme_textdomain('phpms', get_template_directory() . '/languages');
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -184,40 +184,55 @@ if ( ! function_exists( 'phpms_comment' ) ) :
 function phpms_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 	switch ( $comment->comment_type ) :
-		case '' :
-	?>
-	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-		<div id="comment-<?php comment_ID(); ?>">
-		<div class="comment-author vcard">
-			<?php echo get_avatar( $comment, 40 ); ?>
-			<?php printf( __( '%s <span class="says">says:</span>', 'phpms' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
-		</div><!-- .comment-author .vcard -->
-		<?php if ( $comment->comment_approved == '0' ) : ?>
-			<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'phpms' ); ?></em>
-			<br />
-		<?php endif; ?>
-
-		<div class="comment-meta commentmetadata"><a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
-			<?php
-				/* translators: 1: date, 2: time */
-				printf( __( '%1$s at %2$s', 'phpms' ), get_comment_date(),  get_comment_time() ); ?></a><?php edit_comment_link( __( '(Edit)', 'phpms' ), ' ' );
-			?>
-		</div><!-- .comment-meta .commentmetadata -->
-
-		<div class="comment-body"><?php comment_text(); ?></div>
-
-		<div class="reply">
-			<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-		</div><!-- .reply -->
-	</div><!-- #comment-##  -->
-
-	<?php
-			break;
-		case 'pingback'  :
+		case 'pingback' :
 		case 'trackback' :
 	?>
 	<li class="post pingback">
-		<p><?php _e( 'Pingback:', 'phpms' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'phpms' ), ' ' ); ?></p>
+		<p><?php _e( 'Pingback:', 'twentyeleven' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?></p>
+	<?php
+			break;
+		default :
+	?>
+	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+		<article id="comment-<?php comment_ID(); ?>" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<?php
+						$avatar_size = 68;
+						if ( '0' != $comment->comment_parent )
+							$avatar_size = 39;
+
+						echo get_avatar( $comment, $avatar_size );
+
+						/* translators: 1: comment author, 2: date and time */
+						printf( __( '%1$s on %2$s <span class="says">said:</span>', 'twentyeleven' ),
+							sprintf( '<span class="fn">%s</span>', get_comment_author_link() ),
+							sprintf( '<a href="%1$s"><time pubdate datetime="%2$s">%3$s</time></a>',
+								esc_url( get_comment_link( $comment->comment_ID ) ),
+								get_comment_time( 'c' ),
+								/* translators: 1: date, 2: time */
+								sprintf( __( '%1$s at %2$s', 'twentyeleven' ), get_comment_date(), get_comment_time() )
+							)
+						);
+					?>
+
+					<?php edit_comment_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
+				</div><!-- .comment-author .vcard -->
+
+				<?php if ( $comment->comment_approved == '0' ) : ?>
+					<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'twentyeleven' ); ?></em>
+					<br />
+				<?php endif; ?>
+
+			</footer>
+
+			<div class="comment-content"><?php comment_text(); ?></div>
+
+			<div class="reply">
+				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply <span>&darr;</span>', 'twentyeleven' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
 	<?php
 			break;
 	endswitch;

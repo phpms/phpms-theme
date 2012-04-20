@@ -151,7 +151,12 @@ body {
 .link-mais a{
   background: none;
   font-size: 18px;
-  }
+}
+.comentarios {
+  border-top: 3px solid #00222B;
+  padding: 20px;
+  color: #00222B;
+}
 .rodape {
   background: url(../images/bgf.jpg) #333;
   padding-bottom: 30px;
