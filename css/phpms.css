@@ -48,7 +48,7 @@ body {
 }
 .logo {
   background: url(../images/logo.png) bottom center no-repeat;
-  height: 220px; 
+  height: 220px;
   width: 100%;
   text-decoration: none;
   display: block;
@@ -67,7 +67,7 @@ body {
 .nalista h2 span {
   color: #fff;
   font-size: 39px;
-  font-family: 'LeagueGothic';    
+  font-family: 'LeagueGothic';
   text-align: justify;
   font-weight: normal;
   line-height: 35px;
@@ -102,7 +102,7 @@ body {
   font-size: 55px;
   font-family: 'LeagueGothic';
   font-weight: normal;
-  line-height: 35px; 
+  line-height: 35px;
   letter-spacing: 0;
 }
 .post h2 a {
@@ -162,15 +162,14 @@ body {
 }
 .widget_polls-widget{
   margin-top: 20px;
-} 
+}
 .widget_polls-widget p {
   margin: 0;
 }
 .widget_polls-widget a {
   color: #fff;
-  margin-top: -20px;
   display: block;
-} 
+}
 .widget_polls-widget strong , .widget-container h3 {
   color: #fff;
   font-family: 'LeagueGothic';
