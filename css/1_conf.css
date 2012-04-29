@@ -1,13 +1,33 @@
-body {
-	background: #fff;
+h1 {
+	padding-top: 20px;
+	color: #61868B;
+	font-size: 48px;
+}
+h2 {
+	font-family: 'Graduate';
+	margin: 20px 0 20px;
+}
+a, a:visited, a:active {
+	color: #156EA4;
+}
+footer {
+	text-align: center;
 }
 #header {
-	background: url('../images/1_conf_bg_header.jpg') repeat-x top left;
-	height: 250px;
-	width: 100%;
+	border-bottom: 7px solid #ccc;
+	height: 120px;
 }
-#headerimg {
-	border-bottom: 4px solid #5CA47A;
+#header div {
+	padding-top: 10px;
+}
+.rupestre {
+	text-align: center;
+	height: 100%;
+}
+div.titulo {
+	text-align: center;
+	font-family: 'Graduate';
+	height: 100%;
 }
 #headerimg h1 {
 	display: block;
@@ -19,6 +39,54 @@ body {
 	height: 250px;
 	background: url('../images/1_conf_logo.png') no-repeat bottom center;
 }
-.content {
-	background: #9CD2B0;
+.subtitulos {
+	display: block;
+	height: 80px;
+	margin: 10px 0px -15px;
+	font-family: 'Graduate';
+}
+.subtitulos span {
+	text-indent: -99999999px;
+	font-size: 0.000000001em;
+}
+.box {
+	background-color: #E2E0D6;
+	padding: 16px 8px 14px;
+	border-bottom: 5px solid #999;
+}
+.mesa {
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+.palestra {
+	margin-bottom: 10px;
+}
+.foto {
+	background: url('../images/quadro.png') no-repeat bottom left;
+	width: 100px;
+	height: 100px;
+}
+.foto img {
+	padding: 10px 0 0 16px;
+}
+span.titulo {
+	font-weight: bold;
+}
+.conteudo {
+	margin: 0px 0px 40px;
+}
+.widget-container {
+	list-style: none;
+}
+.menu {
+	list-style: none;
+	background: #eee;
+}
+.menu li {
+	display: block;
+	float: left;
+	padding: 0px 5px;
+	margin: 3px 5px 6px;
+	font-family: 'Graduate';
+	font-size: 16px;
 }

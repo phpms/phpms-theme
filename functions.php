@@ -284,6 +284,16 @@ function phpms_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+
+	register_sidebar( array(
+		'name' => __( '1º Conf Sponsors Widget', 'phpms' ),
+		'id' => '1-conf-sponsors-widget',
+		'description' => __( 'Logo dos patrocinadores do 1º PHPMS Conf', 'phpms' ),
+		'before_widget' => '<li id="%1$s" class="widget-container sponsors %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 /** Register sidebars by running phpms_widgets_init() on the widgets_init hook. */
 add_action( 'widgets_init', 'phpms_widgets_init' );
