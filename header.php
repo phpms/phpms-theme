@@ -55,7 +55,7 @@
 <body <?php body_class(); ?>>
 	<div class="container_12 menu" id="access" role="navigation">
 		<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'phpms' ); ?>"><?php _e( 'Skip to content', 'phpms' ); ?></a></div>
-	    <?php wp_nav_menu( array( 'menu_class' => 'grid_12','container' => false, 'theme_location' => 'primary' , 'after' => '&#149;') ); ?>
+	    <?php wp_nav_menu( array( 'menu_class' => 'grid_12','container' => false, 'theme_location' => 'primary' ) ); ?>
 	  <div class="clear"></div>
 	</div>
 	<div class="container_12 content">
