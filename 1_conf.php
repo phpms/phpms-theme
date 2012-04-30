@@ -16,8 +16,6 @@ $tmplDir = get_bloginfo('template_directory');
     <meta name="description" content="1ª PHPMS Conf">
     <meta name="author" content="PHPMS">
 
-    <link href='http://fonts.googleapis.com/css?family=Graduate|Vast+Shadow' rel='stylesheet' type='text/css'>
-
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/1_conf.css" type="text/css" media="screen" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -39,7 +37,7 @@ $tmplDir = get_bloginfo('template_directory');
           <img src="<?php echo $tmplDir; ?>/images/elefante.png" width="100px" height="100px" />
         </div>
         <div class="span8 titulo">
-          <h1><a href="<?php echo home_url(); ?>/1-phpms-conf" title="Home da 1ª PHPMS Conf">1ª PHPMS Conf</a></h1>
+          <h1><a href="<?php echo home_url(); ?>/1-phpms-conf" title="Home da 1ª PHPMS Conf">1º PHPMS Conf</a></h1>
           <h2>8 e 9 de Junho no SENAC MS</h2>
         </div>
         <div class="span2 rupestre">

@@ -1,11 +1,41 @@
+@font-face {
+	font-family:"Bevan";
+	src: url("../fonts/Bevan.eot?") format("eot"),
+	     url('../fonts/Bevan.eot?#iefix') format('embedded-opentype'),
+	     url("../fonts/Bevan.woff") format("woff"),
+	     url("../fonts/Bevan.ttf") format("truetype"),
+	     url("../fonts/Bevan.svg#Bevan") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:"LMMonoCaps";
+	src: url("../fonts/lmmonocaps10-regular.eot?") format("eot"),
+	     url("../fonts/lmmonocaps10-regular.woff") format("woff"),
+	     url("../fonts/lmmonocaps10-regular.ttf") format("truetype"),
+	     url("../fonts/lmmonocaps10-regular.svg#LMMonoCaps10-Regular") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
 h1 {
+	font-family: 'LMMonoCaps';
+	text-shadow: -1px 1px 0px #eee, -3px 3px 0px #000;
 	padding-top: 20px;
-	color: #61868B;
 	font-size: 48px;
 }
+h1, h1 a, h1 a:visited, h1 a:active {
+	color: #F58634;
+}
+h1 a:hover {
+	text-decoration: none;
+}
 h2 {
-	font-family: 'Graduate';
+	font-family: 'Bevan';
+	text-shadow: -1px 1px 0px #eee, -2px 2px 0px #60858A;
 	margin: 20px 0 20px;
+	color: #156EA4;
 }
 a, a:visited, a:active {
 	color: #156EA4;
@@ -26,7 +56,7 @@ footer {
 }
 div.titulo {
 	text-align: center;
-	font-family: 'Graduate';
+	font-family: 'Bevan';
 	height: 100%;
 }
 #headerimg h1 {
@@ -43,7 +73,7 @@ div.titulo {
 	display: block;
 	height: 80px;
 	margin: 10px 0px -15px;
-	font-family: 'Graduate';
+	font-family: 'Bevan';
 }
 .subtitulos span {
 	text-indent: -99999999px;
@@ -87,6 +117,6 @@ span.titulo {
 	float: left;
 	padding: 0px 5px;
 	margin: 3px 5px 6px;
-	font-family: 'Graduate';
+	font-family: 'Bevan';
 	font-size: 16px;
 }
