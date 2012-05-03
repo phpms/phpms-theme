@@ -1,29 +1,27 @@
 @font-face {
-	font-family:"Bevan";
+	font-family: "Bevan";
+	font-style: normal;
+	font-weight: normal;
 	src: url("../fonts/Bevan.eot?") format("eot"),
-	     url('../fonts/Bevan.eot?#iefix') format('embedded-opentype'),
-	     url("../fonts/Bevan.woff") format("woff"),
-	     url("../fonts/Bevan.ttf") format("truetype"),
-	     url("../fonts/Bevan.svg#Bevan") format("svg");
-	font-weight:normal;
-	font-style:normal;
+		url('../fonts/Bevan.eot?#iefix') format('embedded-opentype'),
+		url("../fonts/Bevan.woff") format("woff"),
+		url("../fonts/Bevan.ttf") format("truetype"),
+		url("../fonts/Bevan.svg#Bevan") format("svg");
 }
-
 @font-face {
-	font-family:"LMMonoCaps";
+	font-family: "LMMonoCaps";
+	font-style: normal;
+	font-weight: normal;
 	src: url("../fonts/lmmonocaps10-regular.eot?") format("eot"),
-	     url("../fonts/lmmonocaps10-regular.woff") format("woff"),
-	     url("../fonts/lmmonocaps10-regular.ttf") format("truetype"),
-	     url("../fonts/lmmonocaps10-regular.svg#LMMonoCaps10-Regular") format("svg");
-	font-weight:normal;
-	font-style:normal;
+		url("../fonts/lmmonocaps10-regular.woff") format("woff"),
+		url("../fonts/lmmonocaps10-regular.ttf") format("truetype"),
+		url("../fonts/lmmonocaps10-regular.svg#LMMonoCaps10-Regular") format("svg");
 }
-
 h1 {
 	font-family: 'LMMonoCaps';
-	text-shadow: -1px 1px 0px #eee, -3px 3px 0px #000;
-	padding-top: 20px;
 	font-size: 48px;
+	padding-top: 20px;
+	text-shadow: -1px 1px 0px #eee, -3px 3px 0px #000;
 }
 h1, h1 a, h1 a:visited, h1 a:active {
 	color: #F58634;
@@ -32,10 +30,10 @@ h1 a:hover {
 	text-decoration: none;
 }
 h2 {
-	font-family: 'Bevan';
-	text-shadow: -1px 1px 0px #eee, -2px 2px 0px #60858A;
-	margin: 20px 0 20px;
 	color: #156EA4;
+	font-family: 'Bevan';
+	margin: 20px 0 20px;
+	text-shadow: -1px 1px 0px #eee, -2px 2px 0px #60858A;
 }
 a, a:visited, a:active {
 	color: #156EA4;
@@ -44,22 +42,18 @@ footer {
 	text-align: center;
 }
 #header {
-	border-bottom: 7px solid #ccc;
-	height: 120px;
 }
 #header div {
-	padding-top: 10px;
+	margin-top: 10px;
 }
 .rupestre {
 	text-align: center;
 	height: 100%;
 }
 div.titulo {
-	text-align: center;
 	font-family: 'Bevan';
-	height: 100%;
 }
-#headerimg h1 {
+/*#headerimg h1 {
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -67,8 +61,8 @@ div.titulo {
 #headerimg h1 a {
 	display: block;
 	height: 250px;
-	background: url('../images/1_conf_logo.png') no-repeat bottom center;
-}
+	background: url(../images/1_conf_logo.png) no-repeat bottom center;
+}*/
 .subtitulos {
 	display: block;
 	height: 80px;
@@ -80,24 +74,23 @@ div.titulo {
 	font-size: 0.000000001em;
 }
 .box {
-	background-color: #E2E0D6;
+	background: #F5F5F5;
 	padding: 16px 8px 14px;
 	border-bottom: 5px solid #999;
 }
-.mesa {
-	padding-bottom: 20px;
-	font-weight: bold;
-}
 .palestra {
-	margin-bottom: 10px;
+	height: 100px;
+    margin-bottom: 10px;
 }
 .foto {
-	background: url('../images/quadro.png') no-repeat bottom left;
-	width: 100px;
+	background: url(../images/quadro.png) no-repeat bottom left;
 	height: 100px;
+	margin: 0 5px 0 0;
+	width: 100px;
 }
 .foto img {
 	padding: 10px 0 0 16px;
+	width: 75%;
 }
 span.titulo {
 	font-weight: bold;
@@ -105,18 +98,42 @@ span.titulo {
 .conteudo {
 	margin: 0px 0px 40px;
 }
+.keynote {
+	color: #FF7F44;
+	font-family: 'Bevan';
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.no-keynote {
+	color: #61BF5D;
+	font-family: 'Bevan';
+	font-weight: bold;
+	text-transform: uppercase;
+}
 .widget-container {
 	list-style: none;
 }
 .menu {
+	background: #F5F5F5;
+	border-top: 7px solid #ccc;
 	list-style: none;
-	background: #eee;
+	padding: 10px 0 5px;
+	margin: 0 0 20px;
 }
 .menu li {
-	display: block;
-	float: left;
-	padding: 0px 5px;
-	margin: 3px 5px 6px;
+	display: inline-block;
 	font-family: 'Bevan';
 	font-size: 16px;
+	padding: 0px 5px;
+	margin: 3px 5px 6px;
+}
+
+#sidebar {
+	margin-left: 40px;
+}
+
+#sidebar h3 {
+	color: #156EA4;
+	font-family: 'Bevan';
+	padding: 5px 0 15px;
 }
