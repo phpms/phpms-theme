@@ -36,7 +36,7 @@ $tmplDir = get_bloginfo('template_directory');
 				</div>
 				<div class="span5">
 					<h1><a href="<?php echo home_url(); ?>/1-phpms-conf" title="Home da 1ª PHPMS Conf">1º PHPMS Conf</a></h1>
-					<h2 style="font-size: 28px">8 e 9 de Junho no SENAC MS</h2>
+					<h2 style="font-size: 28px">17 e 18 de Agosto no SENAC MS</h2>
 				</div>
 				<div class="span3">
 					<img src="<?php echo $tmplDir; ?>/images/capivara.png" width="100px" height="100px" />
